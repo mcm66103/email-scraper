@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import scrape_emails
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/', scrape_emails)
 ]
