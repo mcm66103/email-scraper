@@ -19,5 +19,5 @@ from .views import scrape_emails
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', scrape_emails)
+    path('', scrape_emails)
 ]
