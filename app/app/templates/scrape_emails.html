@@ -1,1 +1,9 @@
-<h1>test</h1>
+<h1>Email Scraper</h1>
+<p>Put in a url. Get all the emails on that page</p>
+<form action="/" method="post">
+    {% csrf_token %}
+    <input type="char" name="url">
+    <input type="submit">
+</form>
+
+{{ emails }}
